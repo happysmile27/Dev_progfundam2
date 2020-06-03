@@ -1,4 +1,4 @@
-# def create_identity_matrix(n):
+def create_identity_matrix(n):
 
 # def createMatrix(rowCount, colCount, dataList):
 #     mat = []
