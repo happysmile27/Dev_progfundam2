@@ -1,11 +1,18 @@
-string = "GreenRedBlackWhite"
-# def camel_case(s):
-#     words = [s[0]]
-#     for i in s[1:]:
-#         if words[-1][-1].islower() & i.isupper():
-#             words.append(list(i))
-#         else:
-#             words[-1].append(i)
-#     return ["".join(word) for word in words]
-#
-# print(camel_case(string))
+str = "GreenRedBlackWhite"
+
+def camel_case_split(str):
+    words = [[str[0]]]
+
+    for c in str[1:]:
+        if words[-1][-1].islower() and c.isupper():
+            words.append(list(c))
+        else:
+            words[-1].append(c)
+
+    return [''.join(word) for word in words]
+
+
+new_str = camel_case_split(str)
+new = "".join(sorted(new_str))
+print(new)
+
