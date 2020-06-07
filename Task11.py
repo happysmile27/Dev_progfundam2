@@ -1,13 +1,4 @@
-def create_identity_matrix(n):
+import numpy as np
 
-# def createMatrix(rowCount, colCount, dataList):
-#     mat = []
-#     for i in range (rowCount):
-#         rowList = []
-#         for j in range (colCount):
-#             if dataList[j] not in mat:
-#                 rowList.append(dataList[j])
-#         mat.append(rowList)
-#
-#     return mat
-#
+identity_matrix = np.identity(7)
+print(identity_matrix)
